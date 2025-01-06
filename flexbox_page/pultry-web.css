@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    border-color: #E4E4E7; /* A softer gray for borders */
+
+}
+h1 {
+    
+    font-family: "Montserrat", serif;
+    font-size: 3rem;
+}
+body {
+    background-color: #F9FAFB; /* Slightly lighter for a fresher look */
+    color: #374151; /* Matches h1 color for a cohesive text appearance */
+    font-size: 2rem;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.header{
+    padding: 21px 0px;
+    display: flex;
+    background-color:#F1F5F9; 
+}
+.hero{
+    display: flex;
+}
+.dropdown-content{
+    padding: 1em;
+    width: 250px;
+    
+}
+
+.cards{
+    padding: 3em;
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+}
+.cards :hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 255, 0.5)
+}
+.cards div{
+    flex: 1;
+    border: 1px gray;
+    border-color: gray;
+   
+    display: flex;
+    align-items: center;
+    flex: 1 1 calc(25.333% - 20px); /* 3 cards per row, subtracting gap */
+    box-sizing: border-box;
+    height: 30vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Slower transition */
+}
+
+
+
+.dropdown-content a{
+    color: #2563EB; /* Aligns with Material Design's blue for primary links */
+    text-decoration: none;
+    font-size: 2rem;
+    font-family:"Montserrat", sans-serif;
+}
+
+.dropdown-content li{
+    margin-bottom: 2em;
+    text-align: center;
+}
+a:hover {
+    color: #1E40AF; /* A slightly darker blue for hover, adding depth */
+}
+li {
+    list-style-type: none;
+}
+.footer{
+    text-align: center;
+    background-color:#F1F5F9;
+    padding: 1em;
+}
